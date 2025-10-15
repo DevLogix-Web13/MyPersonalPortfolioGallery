@@ -1,66 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Web Design Gallery | DevLogix-Web13</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Web Design Gallery</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
+      margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: #0f172a;
-      color: white;
-      line-height: 1.6;
-      scroll-behavior: smooth;
+      background: linear-gradient(135deg, #3a7bd5, #3a6073);
+      color: #fff;
+      min-height: 100vh;
     }
 
     header {
       text-align: center;
-      padding: 3rem 1rem;
-      background: linear-gradient(to right, #3a7bd5, #3a6073);
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      padding: 60px 20px;
     }
 
     header h1 {
-      font-size: 2.5rem;
-      font-weight: 600;
+      font-size: 2.8rem;
+      margin-bottom: 10px;
     }
 
     header p {
-      font-size: 1.1rem;
-      opacity: 0.9;
-      margin-top: 0.5rem;
+      color: #e0e0e0;
     }
 
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      padding: 3rem;
-      max-width: 1100px;
+      gap: 25px;
+      padding: 40px;
+      max-width: 1200px;
       margin: 0 auto;
     }
 
     .card {
-      background: #1e293b;
-      border-radius: 1rem;
-      overflow: hidden;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+      transition: transform 0.3s;
     }
 
     .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+      transform: scale(1.05);
     }
 
     .card img {
@@ -69,93 +54,63 @@
       object-fit: cover;
     }
 
-    .card-content {
-      padding: 1.2rem;
-    }
-
-    .card-content h3 {
-      margin-bottom: 0.5rem;
+    .card h3 {
+      text-align: center;
+      margin: 15px 0 5px;
       font-size: 1.2rem;
-      color: #38bdf8;
     }
 
-    .card-content p {
-      font-size: 0.95rem;
-      opacity: 0.85;
+    .card p {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #ddd;
+      padding: 0 10px 15px;
     }
 
     footer {
       text-align: center;
-      padding: 2rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      margin-top: 2rem;
+      padding: 30px;
+      color: #ccc;
     }
 
-    .btn {
-      display: inline-block;
-      background: #38bdf8;
-      color: #0f172a;
-      padding: 0.8rem 1.5rem;
-      border-radius: 8px;
-      font-weight: 600;
+    a {
+      color: #fff;
       text-decoration: none;
-      transition: background 0.3s ease;
-      margin-top: 1rem;
     }
 
-    .btn:hover {
-      background: #0ea5e9;
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
-
 <body>
   <header>
     <h1>My Web Design Gallery</h1>
-    <p>Showcasing my creative web projects, UI layouts, and design works 💻</p>
-    <a href="mailto:youremail@example.com" class="btn">Contact Me</a>
+    <p>Showcasing my creative website designs and projects 🌐</p>
   </header>
 
   <section class="gallery">
-    <!-- Card 1 -->
     <div class="card">
-      <img src="https://source.unsplash.com/featured/?website,design" alt="Project 1">
-      <div class="card-content">
-        <h3>Portfolio Website</h3>
-        <p>A modern personal portfolio layout made with HTML, CSS, and JavaScript.</p>
-      </div>
+      <img src="https://picsum.photos/400/250?1" alt="Project 1">
+      <h3>Modern Portfolio</h3>
+      <p>A clean and responsive layout for personal branding.</p>
     </div>
 
-    <!-- Card 2 -->
     <div class="card">
-      <img src="https://source.unsplash.com/featured/?webapp,ui" alt="Project 2">
-      <div class="card-content">
-        <h3>Landing Page</h3>
-        <p>Clean and responsive landing page for a creative agency.</p>
-      </div>
+      <img src="https://picsum.photos/400/250?2" alt="Project 2">
+      <h3>Creative Agency</h3>
+      <p>Designed for agencies with vibrant visuals and motion.</p>
     </div>
 
-    <!-- Card 3 -->
     <div class="card">
-      <img src="https://source.unsplash.com/featured/?dashboard,ux" alt="Project 3">
-      <div class="card-content">
-        <h3>Admin Dashboard</h3>
-        <p>Elegant dashboard interface with data visualizations and dark mode.</p>
-      </div>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="card">
-      <img src="https://source.unsplash.com/featured/?mobile,app" alt="Project 4">
-      <div class="card-content">
-        <h3>Mobile App Design</h3>
-        <p>Minimalist app concept with smooth transitions and strong visual identity.</p>
-      </div>
+      <img src="https://picsum.photos/400/250?3" alt="Project 3">
+      <h3>Minimalist Blog</h3>
+      <p>Elegant typography and smooth reading experience.</p>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 DevLogix-Web13 | Built with 💙 and creativity</p>
+    <p>© 2025 Devlogix | <a href="https://github.com/devlogix-web13">View My GitHub</a></p>
   </footer>
 </body>
 </html>
